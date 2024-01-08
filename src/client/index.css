@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .table-of-surveys__header {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+    }
+    .table-of-surveys__surveys {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+    .grid-rows-10 {
+      grid-template-rows: repeat(10, minmax(0, 1fr));
+    }
+
+    .primary-button {
+      @apply py-1 px-2 bg-yellow-400 text-black dark:bg-white dark:text-black rounded-xl shadow-xl text-center
+    }
+  }
